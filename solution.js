@@ -121,10 +121,10 @@ console.log(powerOf(3));
 console.log(powerOf(4));
 
 
-//Ex.6 Problem Solving How many?
+//Ex.7 Problem Solving How many?
 
 
-console.log("----- Ex.6 -----");
+console.log("----- Ex.7 -----");
 
 
 const vowels = ["a", "e", "i", "o", "u"]

@@ -9,17 +9,18 @@ console.log("----- Ex.1 -----");
 const nameOfCity = (str1) => {
 
   let str1Lowcase = str1.toLowerCase();
-      
-    if (str1Lowcase.startsWith("los")=== true || str1Lowcase.startsWith("new")=== true ){ return str1; 
-    } else { return "The city name does not begin with Los or New "; }
 
-    }
+  if (str1Lowcase.startsWith("los") === true || str1Lowcase.startsWith("new") === true) {
+    return str1;
+  } else { return "The city name does not begin with Los or New "; }
 
-    console.log(nameOfCity('New York'));
+}
 
-    console.log(nameOfCity('newark'));
+console.log(nameOfCity('New York'));
 
-    console.log(nameOfCity('London'));
+console.log(nameOfCity('newark'));
+
+console.log(nameOfCity('London'));
 
 
 //Ex.2
@@ -27,8 +28,8 @@ const nameOfCity = (str1) => {
 console.log("----- Ex.2 -----");
 
 const isDivisible = (int1) => {
-  if (int1 % 100 === 0) { 
-    return true; 
+  if (int1 % 100 === 0) {
+    return true;
   } else { return false; };
 
 
@@ -46,7 +47,7 @@ console.log(isDivisible(100));
 console.log("----- Ex.3 -----");
 
 
-const isRaining = (bool) => (bool === true) ?  "_wet day - you need an umbrella_" :  "_dry day - leave your umbrella at home_";
+const isRaining = (bool) => (bool === true) ? "_wet day - you need an umbrella_" : "_dry day - leave your umbrella at home_";
 
 
 console.log(isRaining(true));
@@ -61,16 +62,16 @@ console.log(isRaining(false));
 console.log("----- Ex.4 -----");
 
 const geometricalSequence = (num2) => {
-  
+
   let emptyArr = [];
 
   for (let i = 0; i < num2; i++) {
     let sequence = Math.pow(2, i);
     emptyArr += sequence + " ";
 
-    
-    
-}
+
+
+  }
 
   return emptyArr.toString();
 }
@@ -86,16 +87,16 @@ console.log("----- Ex.5 -----");
 
 
 const multiplesOfThree = (num3) => {
-  
+
   let emptyArr2 = [];
 
   for (let i = 1; i <= num3; i++) {
-    let sequence2 = (3 * i)  ;
+    let sequence2 = (3 * i);
     emptyArr2 += sequence2 + " ";
 
-    
-    
-}
+
+
+  }
 
   return emptyArr2.toString();
 }
@@ -110,10 +111,10 @@ console.log(multiplesOfThree(10));
 
 console.log("----- Ex.6 -----");
 
-const powerOf = (pow) => { 
+const powerOf = (pow) => {
   let result = Math.pow(pow, pow);
 
-  return result; 
+  return result;
 };
 
 console.log(powerOf(3));
@@ -129,21 +130,21 @@ console.log("----- Ex.7 -----");
 
 const vowels = ["a", "e", "i", "o", "u"]
 
-const  vowelCount = (str5) => { 
+const vowelCount = (str5) => {
 
-    
-    let count = 0;
 
-    for (let letter of str5.toLowerCase()) {
-      if (vowels.includes(letter)) {
-        count++;
-      }
-      
-        
-      
+  let count = 0;
+
+  for (let letter of str5.toLowerCase()) {
+    if (vowels.includes(letter)) {
+      count++;
     }
 
-    return count;
+
+
+  }
+
+  return count;
 }
 
 console.log(vowelCount("hello"));
